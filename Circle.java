@@ -1,10 +1,12 @@
+package lab4;
+
 public class Circle {
     Point center;
     double radius;
 
     public Circle(Point center, double radius) {
         this.center = center;
-        this.radius = radius;
+        this.radius = Math.max(0.0, radius);
     }
 
     public double computeArea() {
@@ -16,6 +18,6 @@ public class Circle {
     }
     
     public double computeArcLength(double theta)  {
-    	return radius * theta;
+    	return Math.abs(radius * theta);
     }
 }
