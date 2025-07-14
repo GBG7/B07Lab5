@@ -1,4 +1,4 @@
-package neolab4;
+package lab4;
 
 public class Circle {
     Point center;
